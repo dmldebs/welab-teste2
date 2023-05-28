@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 3px 20px #24252a;
+    border-radius: 0px 0px 25px 25px;
+    top: 0;
+    width: 100%;
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 800;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+/* Mylena- final menu*/
+
+
+/* Mylena- Home*/
+.wrapper-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F16767;
+    min-height: 90vh;
+    padding-top: 5vh; 
+  }
+  
+  .wrapper-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30vh;
+    margin: 0 auto; 
+    grid-column-gap: 20vh; 
+  }
+  
+  #titulo-home {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #f2f2f2;
+    grid-row: 1;
+    text-align: left;
+  }
+  
+  #we {
+    color: #FFB84C;
+    font-weight: 800; /* Extra bold */
+  }
+  
+  .texto-1 {
+
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 3vh;
+    text-align: left;
+    padding-top: 3vh;
+  }
+  
+  .button-home {
+    padding-top: 8vh;
+  }
+
+  #contato {
+    color: #f2f2f2;
+    background-color: #FFB84C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 8vh;
+    font-size: 3vh;
+    padding: 1vh 2vh;
+    border-radius: 3vh;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .ilustra {
+    text-align: center;
+    align-self: center;
+    animation: move-ilustra 2s ease-in-out infinite alternate, rotate-ilustra 2s ease-in-out infinite alternate;
+  }
+  
+  #ilustra-inicial {
+    width: 100%;
+    max-width: 40vh; 
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 850px) {
+     .wrapper-home { 
+        grid-template-columns: 1fr; 
+        justify-items: center; 
+        padding: 20vh 10vh; 
+        grid-row-gap: 10vh; 
+    }
+
+    #titulo-home {
+         grid-row: 2; 
+         text-align: center;
+         }
+
+    .ilustra { 
+        align-self: center; 
+       } 
+
+       .button-home {
+       text-align: center;
+      }
+
+    }
+   
+
+  @keyframes move-ilustra {
+    0% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+  
+  @keyframes rotate-ilustra {
+    0% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+  
+/* Mylena- final Home*/
+
+
+/* debora, sobre nós, começo do código */
+
+
+.nossahistoria {
+    min-height: 50vh;
+    padding-top: 8rem;
+    background-color: #f2f2f2;
+}
+
+
+.involucro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    padding: 5rem 4rem 0 7rem;
+  }
+  
+  .texto {
+    grid-column: 1;
+    text-align: left;
+    padding: 1rem 0 3rem;
+  }
+  
+  .IMAGEM-2 {
+    grid-column: 2;
+    text-align: right;
+  }
+  
+  .imagem1 img {
+    width: 70%;
+    height: auto;
+    border-radius: 6%;
+  }
+
+  #titulo {
+    text-align: center;
+  }
+
+@media only screen and (max-width: 850px) {
+
+    .nossahistoria {
+        min-height: 100vh;
+        padding-top: 6rem;
+        background-color: #f2f2f2;
+    }
+
+    .involucro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        padding: 10%;
+      }
+      
+      .texto {
+        grid-column: 1;
+        text-align: center;
+
+      }
+
+      .subtitulo {
+        grid-column: 1;
+        text-align: center;
+      }
+      
+      .IMAGEM-2 {
+        padding-top: 2%;
+        grid-column: 1;
+        text-align: center;
+      }
+}
+  
+/* debora, sobre nós, final do código */
+
+/* kami, serviços, começo do código */
+.Services {
+    background-color: #f2f2f2;
+    min-height: 50vh;
+}
+
+.servicestitle {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.WrapperServices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F16767;
+    min-height: 45vh;
+    box-shadow: 0px 3px 20px #24252a;
+}
+
+.gridservices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5vh;
+  margin-top: 5vh;
+}
+
+.col {
+  text-align: center;
+}
+
+.servicestitle {
+    padding: 8rem 0 4rem;
+}
+
+.servicesimage {
+    width: 4rem;
+    height: auto;
+}
+
+#ServicesText {
+  margin-top: 5%;
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 850px) {
+    .gridservices {
+        grid-template-columns: 1fr 1fr;
+        gap: 3vh;
+        padding: 0 4vh 5vh; 
+    }
+}
+
+/* kami, serviços, final do código */
+
+/* kami, portfolio, começo do código */
+.Portfolio {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+.PortfolioWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+    max-width: 54rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 0 6rem;
+}
+
+#tituloportfolio {
+    padding: 8rem 0 2rem;
+    text-align: center;
+}
+
+.hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hover:hover::before {
+    opacity: 1;
+}
+
+.hover:hover h3 {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.hover img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6%;
+}
+
+.hover h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f2f2f2;
+    font-size: 1rem;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+@media only screen and (max-width: 850px) {
+    .PortfolioWrapper {
+        grid-template-columns: 1fr;
+        gap: 4vh;
+        padding: 6vh 6vh; 
+    }
+    
+    .hover {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 3vh;
+        border-radius: 6%;
+    }
+    
+    .hover h3 {
+        position: static;
+        transform: none;
+        text-align: center;
+        visibility: visible;
+        opacity: 1;
+        color: #000000;
+        font-size: 1.2rem;
+        border-radius: 6%;
+    }
+}
+
+
+
+/* kami, portfolio, final do código */
+
+
+
+/* debora, entre em contato, início do código */
+
+
+.container {
+    padding-top: 2rem;
+    background-color: #FFB84C;
+    position: relative;
+    
+}
+
+.iframe-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* Responsivo: Mantém a proporção de 16:9 para o iframe */
+    position: relative;
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*footer*/
+
+.rodape {
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+
+    font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+    margin: 0 0.25rem;
+}
+
+.social-icons img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+@media (max-width: 850px) {
+    .rodape {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+
+ /* debora, entre em contato, final do código */
